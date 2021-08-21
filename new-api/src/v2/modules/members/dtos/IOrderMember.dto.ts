@@ -1,44 +1,50 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsIn, IsNotEmpty, IsOptional, IsString } from 'class-validator';
-import { EntityOfficeMember } from '../typeorm/entities/officeMember.entity';
+import { EntityMember } from '../typeorm/entities/member.entity';
 
 type IDirection = 'ASC' | 'DESC';
-type IAttributes = 'name' | 'createAt';
 
-type IOrderOfficeMemberDTO = {
-  [K in keyof EntityOfficeMember]?: IDirection;
+type IOrderMember = {
+  [K in keyof EntityMember]?: IDirection;
 };
 
-const AttributesOrderOfficeMemberEum = ['name', 'createAt'];
-const DirectionsOrderOfficeMemberEum = ['ASC', 'DESC'];
+const AttributesOrderMemberEnum = [
+  'name',
+  'email',
+  'login',
+  'patent',
+  'quoteName',
+  'createAt',
+];
+const DirectionsOrderMemberEnum = ['ASC', 'DESC'];
 
-export class ISelectOrderOfficeMemberDTO {
+export class ISelectOrderMemberDTO {
   @IsString()
   @IsNotEmpty()
   @IsOptional()
-  @IsIn(AttributesOrderOfficeMemberEum)
+  @IsIn(AttributesOrderMemberEnum)
   @ApiProperty({
     type: String,
     required: false,
     description: 'Attribute that will be ordered',
-    enum: AttributesOrderOfficeMemberEum,
+    enum: AttributesOrderMemberEnum,
     default: 'name',
   })
-  attribute?: IAttributes;
+  attribute?: string;
 
   @IsString()
   @IsNotEmpty()
   @IsOptional()
-  @IsIn(DirectionsOrderOfficeMemberEum)
+  @IsIn(DirectionsOrderMemberEnum)
   @ApiProperty({
     type: String,
     required: false,
     description:
       'Direction of the listing, whether it is increasing or decreasing',
-    enum: DirectionsOrderOfficeMemberEum,
+    enum: DirectionsOrderMemberEnum,
     default: 'ASC',
   })
   direction?: IDirection;
 }
 
-export default IOrderOfficeMemberDTO;
+export default IOrderMember;

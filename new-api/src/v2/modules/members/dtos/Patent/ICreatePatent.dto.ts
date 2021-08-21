@@ -1,12 +1,12 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsDefined, IsNotEmpty, IsOptional, IsString } from 'class-validator';
 
-export default class ICreateOfficeMemberDTO {
+export default class ICreatePatentDTO {
   @IsString()
   @IsNotEmpty()
   @IsDefined()
   @ApiProperty({
-    description: 'Name of office member',
+    description: "Patent's name",
     example: 'Novato',
   })
   name: string;
@@ -15,7 +15,7 @@ export default class ICreateOfficeMemberDTO {
   @IsNotEmpty()
   @IsOptional()
   @ApiProperty({
-    description: 'Descriptions of office member',
+    description: "Patent's description",
     example: 'Os novatos são os alunos que acabaram de iniciar no laboratório',
     required: false,
   })

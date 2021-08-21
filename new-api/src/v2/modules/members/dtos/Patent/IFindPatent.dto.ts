@@ -1,4 +1,4 @@
-export default interface IFindOfficeMemberDTO {
+export default interface IFindPatentDTO {
   id?: string;
   name?: string;
   description?: string;
