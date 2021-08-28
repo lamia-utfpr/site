@@ -27,4 +27,9 @@ export class EntityAreaExpertise extends BasicEntity {
     type: 'varchar',
   })
   description: string;
+
+  constructor(data?: Partial<EntityAreaExpertise>) {
+    super();
+    Object.assign(this, data);
+  }
 }

@@ -17,7 +17,7 @@ import IOrderAreaExpertiseDTO, {
 export class ServiceAreaExpertise {
   constructor(
     @InjectRepository(RepositoryAreaExpertise)
-    private readonly exampleRepository: IRepositoryAreaExpertise,
+    private readonly repositoryAreaExpertise: IRepositoryAreaExpertise,
   ) {}
 
   public async createAreaExpertise(
@@ -25,7 +25,7 @@ export class ServiceAreaExpertise {
   ): Promise<EntityAreaExpertise> {
     return create({
       data: data,
-      repository: this.exampleRepository,
+      repository: this.repositoryAreaExpertise,
     });
   }
 
@@ -37,6 +37,6 @@ export class ServiceAreaExpertise {
       [attribute || 'name']: direction || 'ASC',
     };
 
-    return findAll({ repository: this.exampleRepository, order });
+    return findAll({ repository: this.repositoryAreaExpertise, order });
   }
 }
