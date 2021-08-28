@@ -1,5 +1,7 @@
 import ICreateAreaExpertiseDTO from '../dtos/areaExpertise/ICreateAreaExpertise.dto';
+
 import IOrderAreaExpertiseDTO from '../dtos/areaExpertise/IOrderAreaExpertise.dto';
+
 import { EntityAreaExpertise } from '../typeorm/entities/areaExpertise.entity';
 
 export default interface IRepositoryAreaExpertise {

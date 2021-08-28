@@ -1,3 +1,5 @@
 import { EntityAreaExpertise } from './areaExpertise.entity';
 
-export const Entities = [EntityAreaExpertise];
+import { EntityCategory } from './category.entity';
+
+export const Entities = [EntityAreaExpertise, EntityCategory];

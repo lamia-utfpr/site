@@ -1,3 +1,5 @@
 import { ServiceAreaExpertise } from './areaExpertise.service';
 
-export const Services = [ServiceAreaExpertise];
+import { ServiceCategory } from './category.service';
+
+export const Services = [ServiceAreaExpertise, ServiceCategory];

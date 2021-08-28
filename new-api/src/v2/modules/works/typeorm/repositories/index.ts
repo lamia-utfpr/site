@@ -1,3 +1,5 @@
 import { RepositoryAreaExpertise } from './areaExpertise.repository';
 
-export const Repositories = [RepositoryAreaExpertise];
+import { RepositoryCategory } from './category.repository';
+
+export const Repositories = [RepositoryAreaExpertise, RepositoryCategory];
