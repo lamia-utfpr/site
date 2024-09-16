@@ -49,8 +49,26 @@
   },
   {
     "path": "NewF.png",
-    "width": 162, 
+    "width": 162,
     "height": 96,
     "alt": "NewF"
+  },
+  {
+    "path": "kore_data.png",
+    "width": 162,
+    "height": 96,
+    "alt": "KoreData"
+  },
+  {
+    "path": "edu_bot.png",
+    "width": 162,
+    "height": 96,
+    "alt": "Edubot"
+  },
+  {
+    "path": "vw.png",
+    "width": 162,
+    "height": 96,
+    "alt": "Volkswagen"
   }
 ]
