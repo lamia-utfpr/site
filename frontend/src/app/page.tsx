@@ -14,7 +14,7 @@ const Cover = () => {
         LAMIA
       </h1>
       <h3 className="text-center text-2xl  font-bold text-primary-900 mb-1">
-        LABORATÓRIO DE APRENDIZADO DE MÁQUINA E IMAGENS APLICADOS À INDÚSTRIA
+        LABORATÓRIO DE APRENDIZADO DE MÁQUINA APLICADO À INDÚSTRIA
       </h3>
       <p className="text-center text-xl font-normal text-secondary-900">
         UTFPR Campus Santa Helena
