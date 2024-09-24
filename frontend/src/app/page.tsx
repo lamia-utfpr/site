@@ -133,7 +133,7 @@ const Home = () => {
               <div className="flex max-md:flex-col justify-between max-md:justify-center border-b-2 border-b-primary-700 max-md:border-0">
                 <div className="flex max-md:flex-col gap-6 max-md:gap-0 items-end max-md:items-start border-r-2 border-r-primary-700 pr-10 max-md:border-0">
                   <p className="text-secondary-900 font-extrabold text-8xl max-md:text-7xl mb-6 max-md:mb-2">
-                    +11
+                    +7
                   </p>
                   <p className="text-primary-900 font-bold text-xl max-md:text-lg mb-6">
                     Projetos de PD&I executados com sucesso.
@@ -152,7 +152,7 @@ const Home = () => {
                 <p className="text-secondary-900 font-extrabold">
                   <span className="text-7xl">+</span>
                   <span className="text-4xl max-md:text-2xl">R$</span>
-                  <span className="text-8xl">12</span>
+                  <span className="text-8xl">6</span>
                   <span className="pl-5 text-6xl max-md:text-4xl max-md:pl-2">
                     MILHÕES
                   </span>
@@ -164,7 +164,7 @@ const Home = () => {
               </div>
               <div className="flex max-md:flex-col gap-6 w-full items-end max-md:items-start">
                 <p className="text-secondary-900 font-extrabold text-8xl">
-                  +150
+                  +100
                 </p>
                 <p className="text-primary-900 font-bold text-3xl max-md:text-2xl">
                   alunos, doutores e profissionais do mercado de tecnologia.
